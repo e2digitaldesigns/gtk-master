@@ -1,14 +1,13 @@
-import { Header } from "./Components/Template/Header/Header";
-import { Main } from "./Components/Template/Main/Main";
-import { Navigation } from "./Components/Template/Navigation/Navigation";
+import { Template } from "./Components/Template";
 
 function App() {
   return (
     <>
-      <Header />
-      <Navigation />
+      <Template.Header />
 
-      <Main />
+      <Template.Navigation />
+
+      <Template.Main />
     </>
   );
 }
