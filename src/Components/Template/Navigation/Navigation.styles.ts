@@ -1,25 +1,32 @@
 import styled from "styled-components";
 
-export const Navigation = styled.div`
+export const NavigationWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${props => props.theme.colors.gray2};
+  background-color: ${props => props.theme.colors.background2};
   height: ${props => `calc(100vh - ${props.theme.templateSizes.headerHeight})`};
   width: ${props => props.theme.templateSizes.navigationWidth};
-  border-right: 1px solid ${props => props.theme.colors.border};
+  border-right: 0.0625rem solid ${props => props.theme.colors.border2};
   position: fixed;
-  top: 70px;
+  top: ${props => props.theme.templateSizes.headerHeight};
 `;
 
-export const NavItem = styled.div`
+export const NavItem = styled.div<{ isActive?: boolean }>`
   display: flex;
   align-items: center;
-  height: 45px;
-  padding: 0 20px;
+  height: 3rem;
+  padding: 0 1.25rem;
   cursor: pointer;
-  border-left: 4px solid transparent;
+  border-left: 0.25rem solid
+    ${props => (props.isActive ? props.theme.colors.primary : "transparent")};
+  color: ${props => props.theme.colors.font};
+  font-size: 0.875rem;
+  font-weight: ${props => (props.isActive ? 500 : 400)};
+  background-color: ${props =>
+    props.isActive ? props.theme.colors.gray1 : "transparent"};
   &:hover {
     background-color: ${props => props.theme.colors.gray1};
-    border-left-color: ${props => props.theme.colors.accent};
+    border-left-color: ${props => props.theme.colors.primary};
   }
+  transition: background-color 0.75s, border-left-color 0.75s;
 `;

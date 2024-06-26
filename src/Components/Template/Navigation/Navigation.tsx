@@ -6,18 +6,30 @@ import { Routes } from "../../../Types";
 
 export const Navigation: React.FC = () => {
   return (
-    <Styled.Navigation>
+    <Styled.NavigationWrapper>
       <Link to={Routes.PodcastTemplates}>
         <Styled.NavItem>Podcast Templates</Styled.NavItem>
       </Link>
 
-      <Link to="/boards">
-        <Styled.NavItem>Boards</Styled.NavItem>
+      <Link to={Routes.PodcastCommands}>
+        <Styled.NavItem isActive={true}>Podcast Commands</Styled.NavItem>
       </Link>
 
-      <Link to="/repos">
-        <Styled.NavItem>Repos</Styled.NavItem>
+      <Link to={Routes.PodcastTemplates}>
+        <Styled.NavItem>Podcast Templates</Styled.NavItem>
       </Link>
-    </Styled.Navigation>
+
+      <Link to={Routes.PodcastCommands}>
+        <Styled.NavItem>Podcast Commands</Styled.NavItem>
+      </Link>
+
+      <Link to={Routes.PodcastTemplates}>
+        <Styled.NavItem>Podcast Templates</Styled.NavItem>
+      </Link>
+
+      <Link to={Routes.PodcastCommands}>
+        <Styled.NavItem>Podcast Commands</Styled.NavItem>
+      </Link>
+    </Styled.NavigationWrapper>
   );
 };

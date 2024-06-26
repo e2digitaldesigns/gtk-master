@@ -9,6 +9,20 @@ const applicationRouter = createBrowserRouter([
     element: <ApplicationWrapper />,
     children: [
       {
+        path: Routes.PodcastCommands,
+        element: <div>Podcast Templates</div>,
+        children: [
+          {
+            path: Routes.PodcastCommandNew,
+            element: <div>Podcast Template New</div>
+          },
+          {
+            path: Routes.PodcastCommandProfile,
+            element: <div>Podcast Template Profile</div>
+          }
+        ]
+      },
+      {
         path: Routes.PodcastTemplates,
         element: <div>Podcast Templates</div>,
         children: [

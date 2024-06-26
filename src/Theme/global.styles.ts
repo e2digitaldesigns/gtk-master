@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
         overflow-x: hidden;
         padding-right: 0 !important;
-        background-color: ${props => props.theme.colors.gray1};
+        background-color: ${props => props.theme.colors.background1};
     }
     
     *,

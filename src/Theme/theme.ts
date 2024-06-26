@@ -1,13 +1,20 @@
 export const theme = {
   colors: {
-    primary: "#333",
-    secondary: "#222",
-    accent: "#0178d4",
-    border: "#cfcfcf",
+    background1: "#f8f8f8",
+    background2: "#eaeaea",
+    background3: "#fafafa",
+    border1: "#e4e4e4",
+    border2: "#d2d2d2",
     white: "#fff",
-    black: "#000",
-    gray1: "#f8f8f8",
-    gray2: "#ebebeb"
+    font: "#000",
+
+    primary: "#0178d4",
+    secondary: "#8a8a8a",
+    success: "#4aa467",
+    warning: "#f7b500",
+    error: "#f44336",
+
+    gray1: "#cfcfcf"
   },
   fontSizes: {
     small: "1em",
@@ -15,8 +22,9 @@ export const theme = {
     large: "3em"
   },
   templateSizes: {
-    headerHeight: "70px",
-    navigationWidth: "280px",
-    pageHeaderHeight: "90px"
-  }
+    headerHeight: "3.4375rem", // 55px
+    navigationWidth: "16.25rem", // 260px
+    pageHeaderHeight: "8rem"
+  },
+  borderRadius: "0.125rem"
 };
