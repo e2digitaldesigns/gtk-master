@@ -12,22 +12,6 @@ export const Navigation: React.FC = () => {
       </Link>
 
       <Link to={Routes.PodcastCommands}>
-        <Styled.NavItem isActive={true}>Podcast Commands</Styled.NavItem>
-      </Link>
-
-      <Link to={Routes.PodcastTemplates}>
-        <Styled.NavItem>Podcast Templates</Styled.NavItem>
-      </Link>
-
-      <Link to={Routes.PodcastCommands}>
-        <Styled.NavItem>Podcast Commands</Styled.NavItem>
-      </Link>
-
-      <Link to={Routes.PodcastTemplates}>
-        <Styled.NavItem>Podcast Templates</Styled.NavItem>
-      </Link>
-
-      <Link to={Routes.PodcastCommands}>
         <Styled.NavItem>Podcast Commands</Styled.NavItem>
       </Link>
     </Styled.NavigationWrapper>
