@@ -4,7 +4,7 @@ export const HeaderWrapper = styled.div`
   height: ${props => props.theme.templateSizes.headerHeight};
   width: 100vw;
   background-color: ${props => props.theme.colors.white};
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   padding: 0 20px;

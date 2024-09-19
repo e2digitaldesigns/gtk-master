@@ -1,8 +1,7 @@
 import React from "react";
 import * as Styled from "./Main.styles";
 import { Outlet } from "react-router-dom";
-import { Card, CardBody, CardSeparator } from "../../Shared/Library/Card/Card";
-import { Avatar, Pill, Well } from "../../Shared";
+import { Avatar, Card, Pill, Well } from "../../Shared";
 
 export const Main: React.FC = () => {
   return (
@@ -21,17 +20,16 @@ export const Main: React.FC = () => {
           <Styled.HeaderMenuItem>Commits</Styled.HeaderMenuItem>
           <Styled.HeaderMenuItem>Conflicts</Styled.HeaderMenuItem>
         </Styled.HeaderMenu>
-        {/* <Outlet /> */}
       </Styled.PageHeader>
       <Styled.PageContent>
         <Card>
-          <CardBody>
+          <Card.Body>
             <Well>yessir</Well>
-          </CardBody>
-          <CardSeparator />
-          <CardBody>
+          </Card.Body>
+          <Card.Separator />
+          <Card.Body>
             <Outlet />
-          </CardBody>
+          </Card.Body>
         </Card>
       </Styled.PageContent>
     </Styled.MainWrapper>
